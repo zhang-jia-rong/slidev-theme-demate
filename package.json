@@ -14,7 +14,8 @@
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
-    "screenshot": "slidev export example.md --format png"
+    "screenshot": "slidev export example.md --format png",
+    "release": "release-it"
   },
   "dependencies": {
     "@slidev/types": "^0.43.12",
@@ -23,6 +24,7 @@
     "theme-vitesse": "^0.7.3"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^7.0.2",
     "@slidev/cli": "^0.43.12",
     "release-it": "^16.2.1"
   },
