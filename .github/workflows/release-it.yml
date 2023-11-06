@@ -29,8 +29,9 @@ jobs:
           fetch-depth: 0
       - name: To set repository-specific username/email configuration
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name github-actions[bot]
+          git config user.email \
+            41898282+github-actions[bot]@users.noreply.github.com
       - uses: actions/setup-node@v3
         with:
           node-version: 18
