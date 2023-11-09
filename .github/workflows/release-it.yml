@@ -28,6 +28,10 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: Set repository-specific username/email configuration
+        run: |
+          git config user.name "Zhang Jia Rong"
+          git config user.email zhang-jia-rong@outlook.com
       - name: Import personal GPG key
         run: echo -n "${GPG_PRIVATE_KEY}" | base64 --decode | gpg --import
         env:
