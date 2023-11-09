@@ -45,7 +45,7 @@ jobs:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
-      - if: github.ref_name != 'master'
+      - if: ${{ startsWith(github.ref_name, 'release/') }}
         run: npm run release -- --preRelease=rc --npm.tag=next
       - if: github.ref_name == 'master'
         run: npm run release
