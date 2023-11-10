@@ -1,5 +1,7 @@
 
 
+## [0.1.0-rc.6](https://github.com/zhang-jia-rong/slidev-theme-demate/compare/0.1.0-rc.5...0.1.0-rc.6) (2023-11-10)
+
 ## 0.1.0-rc.5 (2023-11-09)
 
 
